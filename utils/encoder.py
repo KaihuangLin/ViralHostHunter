@@ -10,7 +10,7 @@ class Encoder:
     Demo:
     encoder = Encoder()
     features = encoder.features(dna_sequences_list, protein_sequences_list)  # shape: (len(protein_sequences_list), 218)
-    one_host = encoder.one_hot(protein_sequences_list, max_len)  # shape: (len(protein_sequences_list), max_len, 20, 1)
+    one_hot = encoder.one_hot(protein_sequences_list, max_len)  # shape: (len(protein_sequences_list), max_len, 20, 1)
     """
     def __init__(self):
         self.amino_acid = {
